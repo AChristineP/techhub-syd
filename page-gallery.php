@@ -2,7 +2,7 @@
 <?php get_header() ?>
 
 <main>
-<main class="portfolio">
+<main class="gallery">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -16,5 +16,6 @@
                     <p>No content found</p>
                 <?php endif; ?>
             </div>
+            <h2><?php the_field('Testimonys'); ?></h2>
                 </div>
             <?php get_footer() ?>

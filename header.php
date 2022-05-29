@@ -10,7 +10,6 @@
 </head>
 
 <body>
-<body style="background-color:powderblue;">
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">

@@ -4,7 +4,7 @@ Author: Anne Christine Petersen, Signe Thrane
 Description: Eksamensprojekt 2. semester
 Version 1.0 */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Quicksand:wght@300;400&display=swap');
 
 /* Farver:
 
@@ -14,74 +14,91 @@ Version 1.0 */
 /**/
 
 @media screen and (max-width: 1000px) {
-    body {
-        margin: 20px;
-        overflow-x: hidden;
-    }
-
-/*Forside og navigation*/
-#hero {
-    background-image: url('img/BG.png');
-    background-size: 100vh;
-    background-position: center;
-    color: white;
-    height: 100%;
-    margin-bottom: 5rem;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#frontlogo {
-size: 200px;
-z-index: 100;
-}
- 
-.container-index {
-    background-color: #14142C;
-}
-
-.container-fluid {
-    max-width: auto;
 
 }
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: sans-serif, orbitron;
-}
+                        /*TEKST*/
 
 #hero h1 {
     padding-top: 5%;
-    font-family: roboto, sans-serif;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    font-family: quicksand, sans-serif;
     text-transform: uppercase;
+    color: #CDCCCA;
+    font-weight: 800;
+
     
 }
+
+h1 {
+    Font-family:orbitron, sans-serif;
+    font-weight: 800;
+    justify-content: center;
+    text-align: center;
+    color: #CDCCCA;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
+
+h2 {
+    Font-family:orbitron, sans-serif;
+    Font-family:orbitron, sans-serif;
+    text-align: center;
+    color: #CDCCCA;
+    font-size: 2rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+h3 {
+    Font-family:orbitron, sans-serif;
+    Font-family:orbitron, sans-serif;
+    text-align: center;
+    color: #6AC3C7;
+    font-size: 1.2rem;
+}
+
+p {
+margin: 5%;
+    font-family: sans-serif, orbitron;
+    color: #CDCCCA;
+    font-size: larger;
+    line-height: 2rem;
+    text-align: justify;
+
+
+}
+
+                              /*BODY/MAIN*/
 
 body {
     display: flex;
     flex-direction: column;
+    background-color: #14142C;
+    color: #CDCCCA;
     height: 100vh;
+    font-family: sans-serif, quicksand;
+    margin: auto;
+    overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-    width: 2;
+
+main {
+    flex: 1 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
-body::-webkit-thumb {
-    background: #14142C;
-}
-
-body::-webkit-scrollbar-track {
-    background: #BDEDE0;
-}
 
 nav {
     background-color: #14142C;
     height: 40%;
 }
+
+                              /*HEADER/NAVIGATION*/
+
 header {
     flex-shrink: 0;
     font-family: orbitron, sans-serif;
@@ -93,42 +110,323 @@ font-style: normal;
 z-index: 999;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 a.nav-link{
     display: flex;
     align-items:stretch;
     color: #6AC3C7;
-    font-weight: 1000;
-    font-size: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
     text-transform: uppercase;
     padding-right: 10%;
 }
 
 a.nav-link:hover{
-    color: #989898;
-}
-
-
-
-.row {
-
-    margin:0;
-    padding: 0;
-}
-.adresse-felt {
-    width: 20px;
-
+    color: #CDCCCA;
 }
 
 
                               /*FOOTER*/
  footer {
-background-image: url('images/bg2Artboard-1.gif');
+background-image: url('BG.png');
+background-size: cover;
 width: auto;
 height: auto;
 margin-top: 20%;
-color: white;
+color:#CDCCCA;
+
+}
+
+                            /*CONTACT FORM
+                            se også line 185*/
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: #CDCCCA;
+    color: #000;
+    width: 100%;
+
+}
+
+                            /*KNAPPER*/
+/*sign up forside*/
+button {
+    border-style: none;
+    background-color: #CC99FF;
+    color: #14142C;
+    font-family: orbitron, sans-serif;
+    padding: 15px 32px;
+    border-radius: 30%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+/*newsletter form*/
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+    border-style: none;
+    background-color: #CC99FF;
+    color: #14142C;
+    font-family: orbitron, sans-serif;
+    padding: 15px 32px;
+    border-radius: 5%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#contactform {
+    font-family: orbitron, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6AC3C7;
+
+}
+
+
+
+                                            /*S U B P A G E S
+                                         in alphabetical order*/
+                            
+                                /*INDEX*/
+  #index {
+
+        margin: auto;
+        text-align: center;
+        align-items: center;
+      }
+
+/*herotext / pic*/
+#hero {
+    background-image: url('img/BG.png');
+    background-size: 100vh;
+    background-position: center;
+    color:#CDCCCA;
+    height: 70%;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -5%;
+    padding-top:8%;
+    padding-bottom:8%;
+}
+
+#herobox {
+    display: flex;
+    align-items: flex-end;
+}
+ 
+.container-index {
+    background-color: #14142C;
+}
+
+.container-fluid {
+    max-width: auto;
+
+}
+
+#herorow.row {
+    display: flex;
+    align-items: center;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+#herotext.col-sm-8 {
+    margin-left: -10%;
+}
+
+#heroimg.col-sm-4 {
+}
+
+.logoforside {
+    display: flex;
+    align-items: center;
+}
+
+/*Youtube video*/  
+
+.wp-block-embed__wrapper {
+        align-items: center;
+    }
+
+.wp-block-embed.iframe {
+    height: 2000px;
+}
+
+
+
+/*Upcoming events*/
+  #events {
+    background-color: #313165;
+    height: 500px;
+    width: 20rem;
+    position: relative;
+    left:55px;
+
+  }
+
+
+
+/*Testimonials*/
+
+  #testimonials {
+column-gap: normal;
+}
+
+#lillaboks {
+    display: flex;
+    align-items: center;
+    background-color: #313165;
+    margin:2%;
+    height: 380px;
+    width: 15rem;
+    border-radius: 5%;
+    padding-top: 30%;
+    padding-bottom: 8%;
+                                
+}
+
+#kasser.col-sm {
+column-gap: normal;
+display: flex;
+position: relative;
+left:6rem;
+}
+                                
+#textboks {
+display: flex;
+align-items: baseline;
+background-color: #14142C;
+margin:4%;
+height: 15rem;
+width: 400px;
+border-radius: 5%;
+float: baseline;
+                                
+}
+
+#testimg {
+display: inline-block;
+background-color: #b4b4b4;
+height: 10rem;
+width: 10rem;
+border-radius: 50%;
+z-index: 999;
+position: relative;
+left:30px;
+bottom: 90px;
+                                
+}
+
+                                /*ABOUT US*/
+#abouthero {
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+                                /*CONTACT*/
+#contact-form {
+    margin-bottom: 4%;
+}
+
+#partners {
+padding-top:2%;
+padding-bottom:2%;
+background-color:#313165;
+}
+
+.contactimg {
+    width: 75%;
+    height: auto;
+}
+                                /*GALLERY*/
+
+
+                                /*INVESTORS*/
+
+                                /*JOIN US*/
+#joinusbox {
+    background-image: url('img/startups.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#newsletterinfo {
+margin: 20%;
+}
+
+                                /*STARTUPS*/
+
+#herostartups {
+    background-image: url('img/BG.png');
+    background-size: 100vh;
+    background-position: center;
+    color:#CDCCCA;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -10%;
+}
+
+.start-ups {
+    margin:0;
+}
+ #SU-pitch {
+padding-top:2%;
+padding-bottom:2%;
+background-color:#313165;
+margin-bottom: 5%;
+}
+
+#subox {
+    background-image: url('img/startups.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#startups {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: sans-serif, orbitron;
+    color: #CDCCCA;
+    font-size: larger;
+    line-height: 2rem;
+    text-align: center;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+                                /*STUDENTS*/
+#herostudents {
+    background-image: url('img/BG.png');
+    background-size: 100vh;
+    background-position: center;
+    color:#CDCCCA;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -10%;
 }
