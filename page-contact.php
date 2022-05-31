@@ -49,26 +49,29 @@
                 <section id="partners">
                 <div class="row">
     <div class="col-sm-4"> 
-    <div class="partner1"><img src="<?php the_field('PLACEHOLDER BILLEDE'); ?>"/></div>
+    <div><img id="partner" src="<?php the_field('partner_1'); ?>"/></div>
     </div>
     <div class="col-sm-8">
-    <?php the_field('PLACEHOLDER TEKST'); ?>
+    <h2><?php the_field('partner_overskrift_1'); ?></h2>
+    <?php the_field('partner_info_1'); ?>
                 </section>
                 <section id="partners">
                 <div class="row">
     <div class="col-sm-4">
-    <div class="partner2"><img src="<?php the_field('PLACEHOLDER BILLEDE'); ?>"/></div>
+    <div><img id="partner" src="<?php the_field('partner_2'); ?>"/></div>
     </div>
     <div class="col-sm-8">
-    <?php the_field('PLACEHOLDER TEKST'); ?>
+   <h2> <?php the_field('partner_overskrift_2'); ?></h2>
+    <?php the_field('partner_info_2'); ?>
                 </section>
                 <section id="partners">
                 <div class="row">
     <div class="col-sm-4">
-    <div class="partner3"><img src="<?php the_field('PLACEHOLDER BILLEDE'); ?>"/></div>
+    <div><img id="partner" size="10%" src="<?php the_field('partner_3'); ?>"/></div>
     </div>
     <div class="col-sm-8">
-    <?php the_field('PLACEHOLDER TEKST'); ?>
+    <h2><?php the_field('partner_overskrift_3'); ?></h2>
+    <?php the_field('partner_info_3'); ?>
                 </section>
         </div>
     </div> 

@@ -4,14 +4,8 @@
 
 <h1>ABOUT US</h1>
 <div id="about" class="row gx-5">
-<div class="col-sm-6"> <p>Techhub Syd is a company consisting fully of volunteers, based in Esbjerg, Denmark. We support tech startups, students and investors to grow the tech eco-system in southern Denmark. 
-</br></br>
-Our goal is to strengthen the startup and tech eco-system through a powerful community to fuel the next generation of tech winner companies. 
-</br></br>
-We want to keep the brightest young minds and future startups in Esbjerg and
-the region. And to put Esbjerg on the landmark for tech, green innovation and
-energy efficiency. </p></div>
-<div class="col-sm-6"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/DK.png" width="85%">
+<div class="col-sm-6"> <p><?php the_field('about_us_text'); ?> </p></div>
+<div class="col-sm-6"><img width="60%" src="<?php the_field('esbjerg_map'); ?>"/>
 </div></div>
 
 <img id="abouthero" src=http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/Techhubevent.jpg width="100%">
