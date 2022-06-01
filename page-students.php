@@ -7,30 +7,26 @@
         <div class="row">
             <div class="col-12">
             <div id="herostudents" class="text-center">
-    <h1>FOR STUDENTS</br></br></h1>
-    <div class="text-center">
-    <p>Are you a student in the southern region? 
+    <h1>FOR STUDENTS</br></h1>
+    <div id="studenttext" class="text-center">
+    <p class="text-center">Are you a student in the southern region? 
 And looking for a student job or a internship?
 <br/>
-This is your chance to meet with tech-focused startups looking for people like you, to join their company.</p>
-    <button>SIGN UP HERE</button>
+This is your chance to meet with tech-focused startups looking for people like you, to join their company.</br></br></p>
+<a href="http://anch.guru/techhubsyd/join-us" class="button">SIGN UP HERE</a></div>
     </div></div>
 
 
-    <section id="Students-info">
+    <section id="students-info">
     <h2>WHY JOIN US?</h2>
-    <p>tekst</p>
+
+    <h5><?php the_field('title_1'); ?></h5>
+    <p><?php the_field('text_1'); ?></p>
+    <h5><?php the_field('title_2'); ?></h5>
+    <p><?php the_field('text_2'); ?></p>
+    <h5><?php the_field('title_3'); ?></h5>
+    <p><?php the_field('text_3'); ?></p>
 </section>
-
-
-                <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : the_post() ?>
-                        <h1><?php the_title() ?></h1>
-                        <p><?php the_content(); ?></p>
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <p>No content found</p>
-                <?php endif; ?>
             </div>
                 </div>
             <?php get_footer() ?>

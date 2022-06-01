@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/Untitled-1.svg" alt="" width="70" height="70" class="d-inline-block align-text-middle">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/Untitled-1.svg" alt="" width="70" height="70" class="d-inline-block align-text-middle"class="text-center">
             
                 </a>
                 <link rel="stylesheet" href="https://use.typekit.net/tlc6ube.css">
@@ -31,9 +31,11 @@
                         'container'       => 'div',
                         'container_class' => 'collapse navbar-collapse',
                         'container_id'    => 'bs-example-navbar-collapse-1',
-                        'menu_class'      => 'navbar-nav mr-auto',
+                        'menu_class'      => 'navbar-nav',
                         'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                         'walker'          => new WP_Bootstrap_Navwalker(),
+
+                        
                     )) ?>
                 </div>
             </div>

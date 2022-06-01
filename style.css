@@ -7,10 +7,11 @@ Version 1.0 */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Quicksand:wght@300;400&display=swap');
 
 /* Farver:
-
 #14142C Mørk lilla
-#6AC3C7 tyrkis*/
-
+#313165 Lys Lilla
+#CDCCCA Grå
+#6AC3C7 tyrkis
+#CC99FF Pink*/
 /**/
 
 @media screen and (max-width: 1000px) {
@@ -26,6 +27,7 @@ Version 1.0 */
     text-transform: uppercase;
     color: #CDCCCA;
     font-weight: 800;
+    
 
     
 }
@@ -61,22 +63,32 @@ h3 {
     font-size: 1.2rem;
 }
 
+
 /*STOR TYRKIS ORBITRON*/
 h4 {
     Font-family:orbitron, sans-serif;
     Font-family:orbitron, sans-serif;
     text-align: left;
     color: #6AC3C7;
-    font-size: 666rem;
-    margin:5%;
+    margin:10%;
 
 }
 
+/*LILLE TYRKIS ORBITRON LEFT*/
+h5 {
+    Font-family:orbitron, sans-serif;
+    Font-family:orbitron, sans-serif;
+    text-align: left;
+    color: #6AC3C7;
+    margin: 10%;
+}
+
 p {
-margin: 5%;
+margin: 10%;
     font-family: sans-serif, orbitron;
     color: #CDCCCA;
     font-size: larger;
+    font-size: 25px;
     line-height: 2rem;
     text-align: justify;
 
@@ -102,9 +114,7 @@ body {
 
 main {
     flex: 1 0 auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+margin:10;
 }
 
 
@@ -123,22 +133,27 @@ header {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 font-style: normal;
+text-align: right;
 z-index: 999;
+font-weight: 800;
 }
 
 a.nav-link{
     display: flex;
     align-items:stretch;
     color: #6AC3C7;
-    text-align: center;
-    font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
     padding-right: 10%;
+    font-weight: 800;
 }
 
 a.nav-link:hover{
     color: #CDCCCA;
+}
+
+#bs-example-navbar-collapse-1 {
+
 }
 
 
@@ -147,44 +162,47 @@ a.nav-link:hover{
 background-image: url('img/BG.png');
 background-size: cover;
 width: auto;
-height: auto;
+height: 10rem;
 margin-top: 20%;
 margin-right: -10%;
-margin-: -10%;
 color:#CDCCCA;
 
 }
 
-                            /*CONTACT FORM
-                            se også line 185*/
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"],
-.wpcf7 textarea
-{
-    background-color: #CDCCCA;
-    color: #000;
-    width: 100%;
 
-}
 
                             /*KNAPPER*/
 /*sign up forside*/
 button {
-    border-style: none;
+border-style: none;
     background-color: #CC99FF;
     color: #14142C;
     font-family: orbitron, sans-serif;
     padding: 15px 32px;
-    border-radius: 30%;
-    font-weight: bold;
+    font-weight: 800;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
 
 }
+
+.button {
+    border-style: none;
+        background-color: #CC99FF;
+        color: #14142C;
+        font-family: orbitron, sans-serif;
+        padding: 15px 32px;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25%;
+    
+    }
 
 /*newsletter form*/
 .wpcf7-form-control.has-spinner.wpcf7-submit {
@@ -193,23 +211,12 @@ button {
     color: #14142C;
     font-family: orbitron, sans-serif;
     padding: 15px 32px;
-    border-radius: 5%;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-}
-
-
-#contactform {
-    font-family: orbitron, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #6AC3C7;
-
 }
 
 
@@ -267,8 +274,6 @@ button {
     margin-left: -10%;
 }
 
-#heroimg.col-sm-4 {
-}
 
 .logoforside {
     display: flex;
@@ -288,82 +293,81 @@ button {
 
 
 /*Upcoming events*/
+
+.container-index1{
+    margin-bottom: 10%;
+
+}
+.container-index2{
+    background-image: url(img/MicrosoftTeams-image\ \(3\).png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5rem;
+
+}
+
   #events {
+    display: flex;
+    flex-direction: column;
     background-color: #313165;
-    height: 500px;
+    opacity: 90%;
+    height: 30rem;
     width: 20rem;
     position: relative;
     left:50px;
     text-align: left;
+    margin-bottom: 10%;
+    border-radius: 5%;
+    padding:7%;
+    margin-bottom: 10px;
 
   }
 
+  #eventknap {
+padding-top: 1rem;
+align-self: center;
+  }
 
-#event1 {
-    width: 20%;
-}
+
+  #eventscontainer {
+      height: 40%;
+  }
 
 
 /*Testimonials*/
 
   #testimonials {
-column-gap: normal;
+width: 100%;
+background-image: url('img/startups.png');
+padding: 5%;
+color: #CDCCCA;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+margin-left: -30;
+margin-right: -30;
 }
 
-#lillaboks {
+/*in great company*/
+
+#logos.container {
     display: flex;
-    align-items: center;
-    background-color: #313165;
-    margin:2%;
-    height: 380px;
-    width: 15rem;
-    border-radius: 5%;
-    padding-top: 30%;
-    padding-bottom: 8%;
-                                
+    align-items: baseline;
+    padding: 0%;
 }
 
-#kasser.col-sm {
-column-gap: normal;
-display: flex;
-position: relative;
-left:6rem;
-}
-                                
-#textboks {
-display: flex;
-align-items: baseline;
-background-color: #14142C;
-margin:4%;
-height: 15rem;
-width: 400px;
-border-radius: 5%;
-font-size: 0.7rem;
-line-height: 0.2rem;
-
-                                
+#logo {
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
-#testimg {
-display: inline-block;
-background-color: #b4b4b4;
-height: 10rem;
-width: 10rem;
-border-radius: 50%;
-z-index: 999;
-position: relative;
-bottom: 90px;
-                                
-}
-
-#hest {
-    height: 15rem;
-    width: 100px;
-    position: relative;
-    word-wrap: break-word;
-    overflow:hidden;
-    up:40px;
-}
+#companies {
+    padding-top:2%;
+    padding-bottom:5%;
+    background-color:#313165;
+    text-align: left;
+    }
 
                                 /*ABOUT US*/
 #abouthero {
@@ -371,6 +375,13 @@ margin-top: 5%;
 margin-bottom: 5%;
 }
 
+#about-offer{
+margin:5%;
+}
+
+.icon {
+    padding: 5%;
+}
                                 /*CONTACT*/
 #contact-form {
     margin-bottom: 4%;
@@ -390,10 +401,33 @@ border-radius: 50%;
     width: 75%;
     height: auto;
 }
+
+
+/*contact-form*/
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: #CDCCCA;
+    color: #000;
+    width: 100%;
+
+}
+
+#contactform {
+    font-family: quicksand, sans-serif;
+    color: #CDCCCA;
+
+}
                                 /*GALLERY*/
 
 
                                 /*INVESTORS*/
+.investors {
+    margin: 10%;
+    margin-top: -2%;
+}
 
                                 /*JOIN US*/
 #joinusbox {
@@ -407,6 +441,20 @@ border-radius: 50%;
 margin: 20%;
 }
 
+#herojoinus {
+    background-image: url('img/BG.png');
+    background-size: 60vh;
+    background-position: center;
+    color:#CDCCCA;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -10%;
+    text-align: center;
+}
                                 /*STARTUPS*/
 
 #herostartups {
@@ -427,17 +475,29 @@ margin: 20%;
     margin:0;
 }
  #SU-pitch {
-padding-top:2%;
-padding-bottom:2%;
 background-color:#313165;
-margin-bottom: 5%;
+padding-bottom: 7%;
+/* margin: -1%; */
+/* margin-bottom: 5%; */
+
 }
+
+#SU-info {
+    padding-bottom: 10%;
+    /* margin: -1%; */
+    
+    }
+
+    #startupform {
+padding-top: 5%;
+    }
 
 #subox {
     background-image: url('img/startups.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
+    padding-top: 5%; 
 }
 
 #startups {
@@ -453,6 +513,13 @@ margin-bottom: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
 }
+
+#SUbtn {
+    display: flex;
+    border-radius: 25%;
+    margin-left: 65%;
+    
+    }
                                 /*STUDENTS*/
 #herostudents {
     background-image: url('img/BG.png');
@@ -466,4 +533,27 @@ margin-bottom: 5%;
     background-repeat: no-repeat;
     background-size: cover;
     margin:0 -10%;
+    text-align: center;
+}
+
+#studentstext {
+text-align: center;
+}
+
+#students-info {
+    Padding-top: 5rem;
+    Padding-bottom: 5rem;
+    background-image: url('img/Hnder_signe.png');
+    background-size: 100vh;
+    background-position: center;
+    color:#CDCCCA;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -10%;
+    text-align: center;
+
 }

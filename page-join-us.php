@@ -3,19 +3,13 @@
 
 <main>
 <main class="join-us">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-
-                <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : the_post() ?>
-                        <h1><?php the_title() ?></h1>
-                        <p><?php the_content(); ?></p>
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <p>No content found</p>
-                <?php endif; ?>
-            </div>
+<div id="herojoinus" class="text-center">
+    <h1>JOIN US</br></br></h1>
+    <div><p class="text-center">Join us at TechHub Syd the #1 TechHub community in the southern region of Denmark.
+</br></br>
+You join our community by subscribing to our newsletter. </p>
+</div>
+    </div>
             
 
             <section id="joinus-form">

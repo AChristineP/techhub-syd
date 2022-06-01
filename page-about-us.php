@@ -17,24 +17,16 @@
 We want to support the technology evolvement in the southern region and push forward on renewables, energy end green digitization.</p>
 
 <h1>WHAT DO WE OFFER?</h1>
-<div id="about-offer" class="row gx-5">
-<div class="col-sm-4"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/image-2.png" width="40%"> </div>
-<div class="col-sm-8">To facilitate events for tech start-ups and offer access to investors and students in the southern region.</div>
-<div class="col-sm-4"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/image-3.png" width="40%"> </div>
-<div class="col-sm-8">To strengthen the startup and tech eco-system in the southern region through a powerful community.</div>
-<div class="col-sm-4"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/image-5.png" width="40%"> </div>
-<div class="col-sm-8">To strengthen the startup and tech eco-system in the southern region through a powerful community.</div>
-<div class="col-sm-4"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/image-4.png" width="40%"> </div>
-<div class="col-sm-8">To strengthen the startup and tech eco-system in the southern region through a powerful community.</div>
+<div id="about-offer" class="row gx-5 gy-5">
+<div class="col-sm-4"><img id="icon" width="30%" src="<?php the_field('icon1'); ?>"/> </div>
+<div class="col-sm-8"><h5>EVENTS</h5><p>To facilitate events for tech start-ups and offer access to investors and students in the southern region.</p></div>
+<div class="col-sm-4"><img id="icon" width="30%" src="<?php the_field('icon2'); ?>"/> </div>
+<div class="col-sm-8"><h5>POWERFUL COMMUNITY</h5><p>To strengthen the startup and tech eco-system in the southern region through a powerful community.</p></div>
+<div class="col-sm-4"><img id="icon" width="30%" src="<?php the_field('icon3'); ?>"/> </div>
+<div class="col-sm-8"><h5>NEW TECH VENTURES</h5><p>Match commercial founders with tech founders to create new tech ventures.</p></div>
+<div class="col-sm-4"><img id="icon" width="30%" src="<?php the_field('icon4'); ?>"/> </div>
+<div class="col-sm-8"><h5>INSPIRATIONAL TALKS</h5><p>Inspire with inspirational talks from successful tech founders, industry leaders and business angels.</p></div>
 
-                <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : the_post() ?>
-                        <h1><?php the_title() ?></h1>
-                        <p><?php the_content(); ?></p>
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <p>No content found</p>
-                <?php endif; ?>
             </div>
                 </div>
             <?php get_footer() ?>
