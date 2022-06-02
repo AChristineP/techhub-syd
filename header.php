@@ -11,32 +11,28 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/Untitled-1.svg" alt="" width="70" height="70" class="d-inline-block align-text-middle"class="text-center">
-            
-                </a>
-                <link rel="stylesheet" href="https://use.typekit.net/tlc6ube.css">
+    <nav style="color: #7999cd" class="navbar navbar-expand-md navbar" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'techhub-syd' ); ?>">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img id ="logofooter" src="<?php echo get_stylesheet_directory_uri() ?>/img/Untitled-1.svg" alt="" width="70" height="70"> </a>
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'header-menu-location',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+    </div>
+</nav>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <?php wp_nav_menu(array(
-                        "theme_location" => "header-menu-location",
-                        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
-                        'container'       => 'div',
-                        'container_class' => 'collapse navbar-collapse',
-                        'container_id'    => 'bs-example-navbar-collapse-1',
-                        'menu_class'      => 'navbar-nav',
-                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker'          => new WP_Bootstrap_Navwalker(),
-
-                        
-                    )) ?>
                 </div>
             </div>
         </nav>

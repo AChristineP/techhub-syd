@@ -140,6 +140,9 @@ font-weight: 800;
 
 a.nav-link{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
     align-items:stretch;
     color: #6AC3C7;
     font-size: 1rem;
@@ -152,21 +155,34 @@ a.nav-link:hover{
     color: #CDCCCA;
 }
 
-#bs-example-navbar-collapse-1 {
+.navbar-toggler{
+    color: #6AC3C7;
 
 }
 
 
                               /*FOOTER*/
  footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
 background-image: url('img/BG.png');
+padding: 20%;
+font-family: orbitron;
+font-weight: 400;
+font-size: small;
 background-size: cover;
 width: auto;
 height: 10rem;
-margin-top: 20%;
-margin-right: -10%;
-color:#CDCCCA;
+color:#6AC3C7;
+text-decoration: none;
+margin-left: -10;
+margin-right: -10;
 
+}
+
+.logofooter {
 }
 
 
@@ -197,7 +213,6 @@ border-style: none;
         font-weight: 800;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
         font-size: 16px;
         cursor: pointer;
         border-radius: 25%;
@@ -376,7 +391,7 @@ margin-bottom: 5%;
 }
 
 #about-offer{
-margin:5%;
+margin:10%;
 }
 
 .icon {
@@ -393,6 +408,7 @@ padding-bottom:2%;
 background-color:#313165;
 text-align: left;
 }
+
 #partner {
 border-radius: 50%;
     }
@@ -435,6 +451,10 @@ border-radius: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+#joinusbox2 {
+    margin-top: 10%;
 }
 
 #newsletterinfo {
@@ -544,16 +564,12 @@ text-align: center;
     Padding-top: 5rem;
     Padding-bottom: 5rem;
     background-image: url('img/Hnder_signe.png');
-    background-size: 100vh;
-    background-position: center;
-    color:#CDCCCA;
-    height: 80vh;
-    margin-bottom: 5rem;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin:0 -10%;
+    color:#CDCCCA;
     text-align: center;
+    padding:-10%;
 
 }

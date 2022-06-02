@@ -21,6 +21,14 @@ wp_enqueue_style( 'jquery-lightbox', get_stylesheet_directory_uri() . '/css/jque
 /**
  * Register Custom Navigation Walker
  */
+
+/*Navigation Menus*/
+function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+  }
+  add_action( 'init', 'register_my_menu' );
+  /*End*/
+
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }

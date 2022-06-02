@@ -32,7 +32,7 @@
 
         <img width="100%" src="<?php the_field('eventimg1'); ?>"/>
         </br>
-        <div id=eventknap><button onclick="<?php the_field('LINK HER'); ?>">READ MORE</button></div></div>
+        <div id=eventknap><button onclick="<?php the_field('link1'); ?>">READ MORE</button></div></div>
 <!-- EVENTS 2 -->
     </div>
     <div class="col-sm-4">
@@ -42,7 +42,7 @@
 
         <img width="100%" src="<?php the_field('eventimg2'); ?>"/>
         </br>
-        <div id=eventknap><button onclick="<?php the_field('LINK HER'); ?>">READ MORE</button></div></div>
+        <div id=eventknap><button onclick="<?php the_field('link2'); ?>">READ MORE</button></div></div>
     </div>
     <!-- EVENTS 3 -->
     <div class="col-sm-4">
@@ -52,7 +52,7 @@
 
         <img width="100%" src="<?php the_field('eventimg3'); ?>"/>
                 </br>
-          <div id=eventknap><button onclick="<?php the_field('link1'); ?>">READ MORE</button></div></div>
+          <div id=eventknap><button onclick="<?php the_field('liink3'); ?>">READ MORE</button></div></div>
     </div>
     </div>
     </div>
