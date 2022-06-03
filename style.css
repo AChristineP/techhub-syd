@@ -339,7 +339,18 @@ border-style: none;
 
   }
 
-  #eventknap {
+  .eventknap {
+    border-style: none;
+    background-color: #CC99FF;
+    color: #14142C;
+    font-family: orbitron, sans-serif;
+    padding: 15px 32px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 padding-top: 1rem;
 align-self: center;
   }

@@ -3,9 +3,9 @@
 <main id="index">
     <div id="hero">
     <div id="herorow" class="row">
-    <div id="heroimg" class="col-sm-4"><img src="http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/logo.png" alt="logo" class="logoforside" width="85%"></div>
+    <div id="heroimg" class="col-sm-4"><img src="<?php the_field('logo'); ?>" alt="logo" class="logoforside" width="85%"></div>
     <div id="herotext" class="col-sm-8" class="slideanim"><h1 id=herotext2>Hello, welcome to TechHub Syd we're happy to see you. </h1>
-    <a href="http://anch.guru/techhubsyd/join-us" class="button">SIGN UP HERE</a></div>
+    <a href="http://anch.guru/techhubsyd/wordpress/join-us" class="button">SIGN UP HERE</a></div>
     </div></div></div>
 
     <section class="container-index">
@@ -32,7 +32,8 @@
 
         <img width="100%" src="<?php the_field('eventimg1'); ?>"/>
         </br>
-        <div id=eventknap><button onclick="<?php the_field('link1'); ?>">READ MORE</button></div></div>
+
+        <a href="https://www.eventbrite.com/e/tech-tequila-tickets-313574659247" class="eventknap">READ MORE</a></div>
 <!-- EVENTS 2 -->
     </div>
     <div class="col-sm-4">
@@ -42,7 +43,7 @@
 
         <img width="100%" src="<?php the_field('eventimg2'); ?>"/>
         </br>
-        <div id=eventknap><button onclick="<?php the_field('link2'); ?>">READ MORE</button></div></div>
+        <a href="https://www.eventbrite.com/e/tech-tequila-tickets-313574659247" class="eventknap">READ MORE</a></div>
     </div>
     <!-- EVENTS 3 -->
     <div class="col-sm-4">
@@ -52,7 +53,7 @@
 
         <img width="100%" src="<?php the_field('eventimg3'); ?>"/>
                 </br>
-          <div id=eventknap><button onclick="<?php the_field('liink3'); ?>">READ MORE</button></div></div>
+                <a href="https://www.eventbrite.com/e/tech-tequila-tickets-313574659247" class="eventknap">READ MORE</a></div>
     </div>
     </div>
     </div>

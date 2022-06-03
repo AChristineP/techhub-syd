@@ -46,28 +46,16 @@ After the pitch you can connect and network with investors and setup meetings to
 
 </p>
 </section>
+	
+<?php echo apply_shortcodes( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
+
 <section id="contact-form">
             <div class="row">
 <div id="subox" class="col-sm-6">
     <div id="pitchcontainer"> <h2>SIGN UP</h2> <p><?php the_field('signup'); ?></p></div>
 </div>
-<div id="startupform" class="col-sm-6">
-<form action="/techhubsyd/wordpress-6.0/wordpress/start-ups/#wpcf7-f131-p21-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="131">
-<input type="hidden" name="_wpcf7_version" value="5.5.6.1">
-<input type="hidden" name="_wpcf7_locale" value="en_GB">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f131-p21-o1">
-<input type="hidden" name="_wpcf7_container_post" value="21">
-<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-</div>
-<p><label> Your name<br>
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><label> Your email<br>
-    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><span class="wpcf7-form-control-wrap checkbox-153"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required" id="checkboxes"><span class="wpcf7-list-item first"><label><input type="checkbox" name="checkbox-153[]" value="SaaS"><span class="wpcf7-list-item-label">SaaS</span></label></span><br><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-153[]" value="Mobile app"><span class="wpcf7-list-item-label">Mobile app</span></label></span><br><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-153[]" value="AI / AR / VR"><span class="wpcf7-list-item-label">AI / AR / VR</span></label></span><br><span class="wpcf7-list-item last"><label><input type="checkbox" name="checkbox-153[]" value="Other"><span class="wpcf7-list-item-label">Other</span></label></span></span></span></p>
-<div class="wpcf7-response-output" aria-hidden="true">
-<input id="SUbtn" type="submit" value="Sign up" class="wpcf7-form-control has-spinner wpcf7-submit" id="subtn">
+<div id="startupform" class="col-sm-6"><p><?php echo apply_shortcodes( '[contact-form-7 id="131" title="For startups"]' ); ?></p>
+
 </div></form></div></div>
 
 

@@ -8,7 +8,7 @@
 <div class="col-sm-6"><img width="60%" src="<?php the_field('esbjerg_map'); ?>"/>
 </div></div>
 
-<img id="abouthero" src=http://localhost:5114/techhubsyd/wordpress-6.0/wordpress/wp-content/uploads/2022/05/Techhubevent.jpg width="100%">
+<img id="abouthero" src="<?php the_field('logo'); ?>" width="100%">
 
 <h1>OUR MISSION</h1>
 
