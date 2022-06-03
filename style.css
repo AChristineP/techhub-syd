@@ -215,7 +215,6 @@ border-style: none;
         text-decoration: none;
         font-size: 16px;
         cursor: pointer;
-        border-radius: 25%;
     
     }
 
@@ -333,7 +332,6 @@ border-style: none;
     left:50px;
     text-align: left;
     margin-bottom: 10%;
-    border-radius: 5%;
     padding:7%;
     margin-bottom: 10px;
 
